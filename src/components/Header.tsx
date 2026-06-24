@@ -1,7 +1,6 @@
 import logo from "../assets/icons/logo.svg";
 import { Link } from "react-router";
 import { useAuth } from "../context/AuthContext";
-import {useEffect} from "react";
 
 function Header() {
     const { user, loading, logout } = useAuth();
