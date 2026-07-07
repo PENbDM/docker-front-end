@@ -19,9 +19,12 @@ function Header() {
 
                 {/* Navigation */}
                 <nav className="hidden md:flex items-center gap-10 text-[15px] font-medium text-gray-600">
-                    <Link to="/datasource">
-                        datasource
-                    </Link>
+                    {!loading && user && (
+                        <Link to="/datasource">
+                            Datasource
+                        </Link>
+                    )}
+
 
                     {/*<a href="#" className="hover:text-black transition-colors">*/}
                     {/*    Pricing*/}
